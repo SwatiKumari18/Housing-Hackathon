@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalRegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_registered"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"/>
+
+        <!-- Team Details Section -->
+        <TextView
+            android:id="@+id/teamDetailsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="8dp"/>
+
+        <!-- Team Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/teamNameLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/team_name"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/teamNameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/teamEmailLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/registered_email"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/teamEmailValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- Number of Team Members -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/numTeamMembersLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/team_size_new"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/numTeamMembersValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- Team Member Names -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/teamMemberNamesLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/names"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/teamMemberNamesValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="359dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/rounded_corner"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/screens"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.841"
+        app:menu="@menu/menu"
+        android:foregroundGravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

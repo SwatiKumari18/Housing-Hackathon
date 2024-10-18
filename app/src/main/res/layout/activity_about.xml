@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/housing_hackathon"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_housing_hackathon"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Focus Areas Title -->
+            <TextView
+                android:id="@+id/focus_areas_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/focus_areas"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:paddingBottom="8dp" />
+
+            <!-- Focus Areas Description with Bold Subtopics -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/affordable_housing"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_affordable_housing"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sustainability"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_sustainability"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/student_friendly_housing"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_student_friendly_housing"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accessibility"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_accessibility"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <!-- Event Structure Title -->
+            <TextView
+                android:id="@+id/event_structure_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_structure"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:paddingBottom="8dp" />
+
+            <!-- Event Structure Description with Bold Rounds -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/round_1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_round_1"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/round_2"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_round_2"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/round_3"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_round_3"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <!-- Prizes Title -->
+            <TextView
+                android:id="@+id/prizes_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prizes"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:paddingBottom="8dp" />
+
+            <!-- Prizes Description -->
+            <TextView
+                android:id="@+id/prizes_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_prize"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+
+            <!-- To Be Noted Title -->
+            <TextView
+                android:id="@+id/to_be_noted_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_be_noted"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:paddingBottom="8dp" />
+
+            <!-- To Be Noted Description with Bold Subtopics -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_size"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_teams_size"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mentorship"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_mentorship"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/judging_criteria"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_judging_criteria"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="300sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="359dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/rounded_corner"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/screens"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.841"
+        app:menu="@menu/menu"
+        android:foregroundGravity="center"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstRegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="-194dp">
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:padding="16dp" />
+
+        <!-- Heading: Registration Form -->
+        <TextView
+            android:id="@+id/registration_form_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/registration_form"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Team Name -->
+        <EditText
+            android:id="@+id/team_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registration_form_heading"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:hint= "@string/enter_team_name"
+            android:inputType="text" />
+
+        <!-- Focus Group RadioButtons -->
+        <TextView
+            android:id="@+id/focus_group_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/team_name"
+            android:layout_marginTop="16dp"
+            android:text="@string/select_focus_group"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/focus_group_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/focus_group_label"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/focus_affordable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/affordable_housing" />
+
+            <RadioButton
+                android:id="@+id/focus_sustainability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sustainability" />
+
+            <RadioButton
+                android:id="@+id/focus_student_friendly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/student_friendly_housing" />
+
+            <RadioButton
+                android:id="@+id/focus_accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accessibility" />
+        </RadioGroup>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/focus_group_radio_group"
+            android:layout_marginTop="16dp"
+            android:autofillHints="emailAddress"
+            android:hint="@string/enter_registration_email"
+            android:inputType="textEmailAddress" />
+
+        <!-- Switch (Accept Terms & Conditions) -->
+        <Switch
+            android:id="@+id/terms_conditions_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginTop="10dp"
+            android:text="@string/accept_terms_and_conditions"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <!-- Button (Proceed to Next Step) -->
+        <Button
+            android:id="@+id/nextbutton"
+            android:onClick="LaunchNextPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="535dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="@string/next" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="359dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/rounded_corner"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/screens"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.841"
+        app:menu="@menu/menu"
+        android:foregroundGravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -43,9 +43,3 @@ This project is an Android app designed for managing a Hackathon event. It incor
 ## Data Flow
 
 - **Data Passing:** The app ensures that data entered in the registration form (spread across multiple screens) is passed between screens and displayed in a summary format upon completion.
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/hackathon-event-app.git
